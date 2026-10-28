@@ -13,11 +13,6 @@ Aquí se incluirán:
 * Sharon M. Lobo
 * Cristian E. Agualimpia
 * Fabian S. Abreo
-
----
-
-## Descripción de la Solución Implementada
-
 ### 1. Visión General de la Celda de Trabajo y Entorno Físico
 Se implementó y automatizó una celda de trabajo industrial para la decoración de pasteles utilizando un robot industrial **ABB IRB 140**, una **banda transportadora bidireccional**, un gabinete controlador **ABB IRC5** con módulo de entradas/salidas digitales (DSQC 652), una **caja de botonera industrial con testigos luminosos de estado**, y una herramienta porta-marcador impresa en 3D.
 
