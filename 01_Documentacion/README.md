@@ -5,6 +5,52 @@ En esta carpeta se encuentra la documentación correspondiente al desarrollo del
 Aquí se incluirán:
 
 * **Descripción de la solución implementada:** Automatización de la celda con el robot ABB IRB 140 e integración con la banda transportadora para la decoración del pastel (nombres de los integrantes y Pac-Man).
+
+* # Documentación - Laboratorio No. 01
+
+**Asignatura:** Robótica Industrial  
+**Ubicación:** Laboratorio de Sistemas Inteligentes Robotizados (Lab SIR - UNAL)  
+**Equipo:** Grupo 4C ("Robot Abel")  
+**Integrantes:**
+* Sharon M. Lobo
+* Cristian E. Agualimpia
+* Fabian S. Abreo
+
+---
+
+## Descripción de la Solución Implementada
+
+### 1. Visión General de la Celda de Trabajo y Entorno Físico
+Se implementó y automatizó una celda de trabajo industrial para la decoración de pasteles utilizando un robot industrial **ABB IRB 140**, una **banda transportadora bidireccional**, un gabinete controlador **ABB IRC5** con módulo de entradas/salidas digitales (DSQC 652), una **caja de botonera industrial con testigos luminosos de estado**, y una herramienta porta-marcador impresa en 3D.
+
+Para la validación experimental se construyeron **dos maquetas físicas de pasteles**:
+* Base cilíndrica rígida recubierta superiormente con papel adhesivo transparente (*contact*).
+* Acabado estético lateral simulando glaseado rosado (*drip cake*).
+* La superficie plástica permitió ejecutar trazos continuos con marcadores de borrado en seco y limpiar el plano de trabajo tras cada ciclo sin degradar la maqueta.
+
+### 2. Diseños CAD y Calibración del TCP (`tooldata`)
+* **Calibración Física (Método de Reorientación en Punta Fija):** Se utilizó una punta metálica fija en la mesa como referencia espacial. El robot aproximó la herramienta desde 4 orientaciones distintas manteniendo el extremo del marcador inmóvil en el espacio mientras el *flange* reorientaba su pose. El controlador IRC5 calculó las coordenadas del centro de la herramienta (`tooldata`).
+* **Validación en RobotStudio:** Se importó el modelo CAD de la herramienta porta-marcador a la estación virtual y se ajustaron los parámetros cartesianos de la simulación reduciendo el margen de error del TCP antes de transferir la configuración al robot real.
+
+### 3. Trayectorias y Objeto de Trabajo (`wobjdata`)
+* **Trazado:** Se programó el dibujo de la figura central de **Pac-Man comiendo puntos hacia un fantasma**, flanqueado por los nombres del equipo (**SHARON**, **ESTEBAN**, **FABIAN**).
+* **Movimientos:** Se utilizaron movimientos articulares (`MoveJ`) para aproximaciones en el aire ($Z = -10\text{ mm}$) y retornos a la pose `HOME`, y movimientos lineales rectilíneos (`MoveL`) para el contacto y trazado continuo.
+* **Ajuste de Plano (`wobjdata`):** Para absorber desalineaciones mecánicas o variaciones de altura de la banda transportadora entre sesiones de laboratorio, la trayectoria se vinculó a un `wobjdata`, permitiendo re-calibrar el offset en $Z$ sin reprogramar los puntos del dibujo.
+
+### 4. Secuencia de Operación y Modos de Trabajo
+La celda se gestiona desde la botonera de control vinculada a las entradas y salidas digitales del controlador:
+
+1. **Rutina 1: Ciclo Automático de Decoración (`DI_01` / `DO_01` - Testigo 1):**
+   * El pastel ingresa por la banda transportadora (`FWD_Conveyor = 1`).
+   * Al posicionarse frente al robot, la banda se detiene y se activa el Testigo 1 (`DO_01 = 1`).
+   * El robot desciende y ejecuta el trazado completo (Pac-Man y nombres).
+   * Al finalizar, se eleva a la posición segura `HOME`, el Testigo 1 se apaga y la banda reanuda su marcha para entregar el producto terminado.
+2. **Rutina 2: Pose de Mantenimiento (`DI_02` / `DO_02` - Testigo 2):**
+   * La banda se detiene y el manipulador se desplaza hacia una posición elevada de fácil acceso frontal.
+   * Permite la inspección visual, reemplazo o ajuste de altura del marcador. El Testigo 2 permanece encendido como indicador de estado.
+3. **Rutina 3: Coreografía "Farmear Aura" (`DI_03` / `DO_03` - Testigo 3):**
+   * Con la banda detenida, se activa el Testigo 3.
+   * El robot ejecuta una rutina de reorientación continua del TCP en el aire mediante bucles y condicionales. Al terminar, retorna a la pose `HOME` y deshabilita la salida.
 * **Diagrama de flujo de la secuencia completa:** Lógica de control para el ciclo automático (`DI_01`), pose de mantenimiento (`DI_02`) y rutina Farmear Aura (`DI_03`).
 * **Plano de planta de la celda:** Disposición espacial del robot, la banda transportadora y zonas de trabajo.
 * **Descripción de las instrucciones y funciones de RAPID utilizadas:** Uso de `MoveJ`, `MoveL`, `Set`, `Reset`, `WaitTime`, condicionales `IF`, ciclos `FOR`/`WHILE` y manejo de `wobjdata`.
