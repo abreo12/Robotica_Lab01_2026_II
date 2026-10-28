@@ -1,7 +1,7 @@
 # Documentación
 
 En esta carpeta se encuentra la documentación correspondiente al desarrollo del Laboratorio No. 01 de Robótica Industrial.
-##Descripción de la solución implementada.##
+## Descripción de la solución implementada.
 **Asignatura:** Robótica Industrial  
 **Ubicación:** Laboratorio de Sistemas Inteligentes Robotizados (Lab SIR - UNAL)  
 **Equipo:** Grupo 4C ("Robot Abel")  
