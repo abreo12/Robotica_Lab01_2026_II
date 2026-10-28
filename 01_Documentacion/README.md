@@ -6,8 +6,6 @@ Aquí se incluirán:
 
 * **Descripción de la solución implementada:** Automatización de la celda con el robot ABB IRB 140 e integración con la banda transportadora para la decoración del pastel (nombres de los integrantes y Pac-Man).
 
-* # Documentación - Laboratorio No. 01
-
 **Asignatura:** Robótica Industrial  
 **Ubicación:** Laboratorio de Sistemas Inteligentes Robotizados (Lab SIR - UNAL)  
 **Equipo:** Grupo 4C ("Robot Abel")  
