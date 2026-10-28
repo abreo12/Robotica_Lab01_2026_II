@@ -2,10 +2,6 @@
 
 En esta carpeta se encuentra la documentación correspondiente al desarrollo del Laboratorio No. 01 de Robótica Industrial.
 
-Aquí se incluirán:
-
-* **Descripción de la solución implementada:** Automatización de la celda con el robot ABB IRB 140 e integración con la banda transportadora para la decoración del pastel (nombres de los integrantes y Pac-Man).
-
 **Asignatura:** Robótica Industrial  
 **Ubicación:** Laboratorio de Sistemas Inteligentes Robotizados (Lab SIR - UNAL)  
 **Equipo:** Grupo 4C ("Robot Abel")  
@@ -46,7 +42,6 @@ La celda se gestiona desde la botonera de control vinculada a las entradas y sal
    * El robot ejecuta una rutina de reorientación continua del TCP en el aire mediante bucles y condicionales. Al terminar, retorna a la pose `HOME` y deshabilita la salida.
 * **Diagrama de flujo de la secuencia completa:** Lógica de control para el ciclo automático (`DI_01`), pose de mantenimiento (`DI_02`) y rutina Farmear Aura (`DI_03`).
 * **Plano de planta de la celda:** Disposición espacial del robot, la banda transportadora y zonas de trabajo.
-* **Descripción de las instrucciones y funciones de RAPID utilizadas:** Uso de `MoveJ`, `MoveL`, `Set`, `Reset`, `WaitTime`, condicionales `IF`, ciclos `FOR`/`WHILE` y manejo de `wobjdata`.
 
 * ## Descripción de Instrucciones y Funciones de RAPID Utilizadas
 
