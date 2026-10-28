@@ -14,7 +14,7 @@ Aquí se incluirán:
 ### Declaraciones de Datos y Estructuras
 * **`MODULE ... ENDMODULE`**: Encapsula y organiza todo el código, rutinas, datos y variables del programa en una unidad lógica dentro del controlador RAPID.
 * **`PERS tooldata`**: Declara un dato persistente (`MyNewTool`) que almacena las propiedades físicas y geométricas de la herramienta porta-marcador. Define las coordenadas cartesianas del TCP ($X, Y, Z$), la orientación mediante cuaterniones y las características de masa/centro de gravedad.
-* **`TASK PERS wobjdata`**: Define el sistema de coordenadas de trabajo (`Workobject_2`). Permite referenciar todas las trayectorias de la torta a un plano específico, facilitando la reutilización del trazado en distintas ubicaciones cuadrantes ($x(+), y(+)$ y $x(+), y(-)$) sin reprogramar los puntos individuales.
+* **`TASK PERS wobjdata`**: Define el sistema de coordenadas de trabajo (`Workobject_2`). Permite referenciar todas las trayectorias de la torta a un plano específico, facilitando la reutilización del trazado en distintas ubicaciones cuadrantes ( $x(+), y(+)$ y $x(+), y(-)$ ) sin reprogramar los puntos individuales.
 * **`CONST robtarget`**: Define constantes de posición cartesiana (`Target_10`, `Target_20`, etc.). Almacenan las coordenadas tridimensionales de aproximación y trazado, la orientación del TCP y la configuración de ejes del robot.
 
 ### Instrucciones de Movimiento
