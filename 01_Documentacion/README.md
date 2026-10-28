@@ -43,7 +43,7 @@ La celda se gestiona desde la botonera de control vinculada a las entradas y sal
 * **Diagrama de flujo de la secuencia completa:** Lógica de control para el ciclo automático (`DI_01`), pose de mantenimiento (`DI_02`) y rutina Farmear Aura (`DI_03`).
 * **Plano de planta de la celda:** Disposición espacial del robot, la banda transportadora y zonas de trabajo.
 
-* ## Descripción de Instrucciones y Funciones de RAPID Utilizadas
+## Descripción de Instrucciones y Funciones de RAPID Utilizadas
 
 ### Declaraciones de Datos y Estructuras
 * **`MODULE ... ENDMODULE`**: Encapsula y organiza todo el código, rutinas, datos y variables del programa en una unidad lógica dentro del controlador RAPID.
