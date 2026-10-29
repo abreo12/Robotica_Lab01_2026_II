@@ -40,36 +40,12 @@ La celda se gestiona desde la botonera de control vinculada a las entradas y sal
 3. **Rutina 3: Coreografía "Farmear Aura" (`DI_03` / `DO_03` - Testigo 3):**
    * Con la banda detenida, se activa el Testigo 3.
    * El robot ejecuta una rutina de reorientación continua del TCP en el aire mediante bucles y condicionales. Al terminar, retorna a la pose `HOME` y deshabilita la salida.
-* ## Diagrama de flujo de la secuencia completa: ## Lógica de control para el ciclo automático (`DI_01`), pose de mantenimiento (`DI_02`) y rutina Farmear Aura (`DI_03`).
+* ## Diagrama de flujo de la secuencia completa: ##
+* Lógica de control para el ciclo automático (`DI_01`), pose de mantenimiento (`DI_02`) y rutina Farmear Aura (`DI_03`).
 flowchart TD
     Start([Inicio: Espera de Señal]) --> CheckDI{¿Qué botón se presionó?}
 
-    %% Ciclo Automático
-    CheckDI -- DI_01 (Ciclo Automático) --> R1_Start[Activar FWD_Conveyor = 1\n(Testigo DO_01 = 1)]
-    R1_Start --> R1_Wait[Esperar posición del pastel\nWaitTime]
-    R1_Wait --> R1_Stop[Detener banda\nFWD_Conveyor = 0]
-    R1_Stop --> R1_MoveJ1[MoveJ a aproximación\nZ = -10 mm]
-    R1_MoveJ1 --> R1_MoveL1[MoveL trazado Pac-Man\ny nombres del equipo]
-    R1_MoveL1 --> R1_MoveJ2[MoveJ elevación\na posición segura]
-    R1_MoveJ2 --> R1_End[Apagar Testigo DO_01 = 0\nFWD_Conveyor = 1 para entregar]
-    R1_End --> HOME([Retorno a HOME])
-    
-    %% Mantenimiento
-    CheckDI -- DI_02 (Mantenimiento) --> R2_Start[Detener banda\nActivar DO_02 = 1]
-    R2_Start --> R2_MoveJ[MoveJ a pose elevada\nde acceso frontal]
-    R2_MoveJ --> R2_Wait[Esperar reajuste / inspección\nWaitTime o señal]
-    R2_Wait --> R2_End[Apagar Testigo DO_02 = 0]
-    R2_End --> HOME
-    
-    %% Farmer Aura
-    CheckDI -- DI_03 (Farmer Aura) --> R3_Start[Detener banda\nActivar DO_03 = 1]
-    R3_Start --> R3_Loop[Iniciar bucle FOR/WHILE\nReorientación continua del TCP]
-    R3_Loop --> R3_End[Apagar Testigo DO_03 = 0]
-    R3_End --> HOME
-
-    %% Banda y salidas
-    BWD_Conveyor[BWD_Conveyor = 1\nRetroceso de banda] -.-> R1_Start
-    Reset[Reset / Enclavamientos] -.-> R1_Stop
+  
 * **Plano de planta de la celda:** Disposición espacial del robot, la banda transportadora y zonas de trabajo.
 
 ## Descripción de Instrucciones y Funciones de RAPID Utilizadas
