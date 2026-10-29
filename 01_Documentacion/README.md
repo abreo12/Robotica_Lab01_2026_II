@@ -43,7 +43,7 @@ La celda se gestiona desde la botonera de control vinculada a las entradas y sal
 * ## Diagrama de flujo de la secuencia completa: ##
 * Lógica de control para el ciclo automático (`DI_01`), pose de mantenimiento (`DI_02`) y rutina Farmear Aura (`DI_03`).
 
-    ```mermaid
+ ```mermaid
 flowchart TD
     Start([Inicio: Espera de Señal]) --> CheckDI{¿Qué botón se presionó?}
 
