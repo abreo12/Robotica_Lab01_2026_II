@@ -10,9 +10,9 @@ Aquí se incluirán:
 * 📐 **Acople del marcador (Pieza 1):** [`Acople_marcador_Pieza1.step`](./Acople_marcador_Pieza1.step)
 * 📐 **Tubo del marcador:** [`Tubo_marcador.step`](./Tubo_marcador.step)
 * 📦 **Modelo para RobotStudio:** [`HERRAMIENTA_PARA_SIMULACION.sat`](./HERRAMIENTA_PARA_SIMULACION.sat)
- #### 📸 Vista Previa del Modelo CAD
-![Vista 3D de la Herramienta](./Herramienta.jpeg)
-
+ #### 📸 Vista Previa del Modelo CAD de la herramienta
+<img src="./nombre_de_tu_imagen.jpg" alt="Vista CAD" width="400"/>
+ #### 📸 Vista Previa del Modelo CAD del pastel
 ---
 
 
