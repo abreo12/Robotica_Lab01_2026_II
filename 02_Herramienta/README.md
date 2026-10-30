@@ -5,7 +5,15 @@ En esta carpeta se incluirá la información relacionada con la herramienta dise
 Aquí se incluirán:
 
 * **Diseño de la herramienta:** Porta-marcador adaptado al *flange* del robot ABB IRB 140.
-* **Modelo CAD:** Archivos de modelado 3D de la herramienta y la superficie del pastel.
+  ### 🛠️ Archivos CAD y Modelos 3D
+
+* 📐 **Acople del marcador (Pieza 1):** [`Acople_marcador_Pieza1.step`](./Acople_marcador_Pieza1.step)
+* 📐 **Tubo del marcador:** [`Tubo_marcador.step`](./Tubo_marcador.step)
+* 📦 **Modelo para RobotStudio:** [`HERRAMIENTA_PARA_SIMULACION.sat`](./HERRAMIENTA_PARA_SIMULACION.sat)
+
+---
+
+## Metodología de Calibración y Análisis de Variabilidad (Real vs. Virtual)
 * **Archivos del modelo:** Archivos en formato `.stl` / `.sat`.
 ### Metodología de Calibración y Análisis de Variabilidad (Real vs. Virtual)
 
