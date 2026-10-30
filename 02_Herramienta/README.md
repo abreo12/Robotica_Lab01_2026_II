@@ -7,7 +7,7 @@ Aquí se incluirán:
 * **Diseño de la herramienta:** Porta-marcador adaptado al *flange* del robot ABB IRB 140.
 * **Modelo CAD:** Archivos de modelado 3D de la herramienta y la superficie del pastel.
 * **Archivos del modelo:** Archivos en formato `.stl` / `.sat`.
-*### Metodología de Calibración y Análisis de Variabilidad (Real vs. Virtual)
+### Metodología de Calibración y Análisis de Variabilidad (Real vs. Virtual)
 
 El proceso de calibración del TCP en el robot real se realizó de manera iterativa mediante el método de los 4 puntos en el FlexPendant. En las primeras pruebas se obtuvieron errores elevados (entre el 15% y el 7%), causados por aproximaciones desde ángulos muy parecidos y por la imprecisión visual al alinear la herramienta con el cono de referencia. Siguiendo las recomendaciones del docente y del monitor para lograr un error inferior al 5%, la clave consistió en abordar el punto fijo desde cuatro orientaciones espaciales drásticamente disímiles entre sí. Con esto, el controlador IRC5 calculó la intersección geométrica con mayor exactitud, reduciendo el error final a aproximadamente un **4%**, el cual quedó registrado en la variable persistente `PERS tooldata MyNewTool` del código RAPID.
 
