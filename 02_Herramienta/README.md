@@ -12,6 +12,7 @@ Aquí se incluirán:
 * 📦 **Modelo para RobotStudio:** [`HERRAMIENTA_PARA_SIMULACION.sat`](./HERRAMIENTA_PARA_SIMULACION.sat)
  #### 📸 Vista Previa del Modelo CAD de la herramienta
 <img src="./Herramienta.jpeg" alt="Herramienta" width="450"/>
+
  #### 📸 Vista Previa del Modelo CAD del pastel
 <img src="./Pastel.jpeg" alt="Base del Pastel" width="450"/>
 
