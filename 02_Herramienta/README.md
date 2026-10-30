@@ -11,10 +11,15 @@ Aquí se incluirán:
 * 📐 **Tubo del marcador:** [`Tubo_marcador.step`](./Tubo_marcador.step)
 * 📦 **Modelo para RobotStudio:** [`HERRAMIENTA_PARA_SIMULACION.sat`](./HERRAMIENTA_PARA_SIMULACION.sat)
  #### 📸 Vista Previa del Modelo CAD de la herramienta
-<img src="./Herramienta.jpeg" alt="Herramienta" width="450"/>
+<div align="center">
+  <img src="./Herramienta.jpeg" alt="Herramienta" width="320" height="240" />
+  </div>
+
 
  #### 📸 Vista Previa del Modelo CAD del pastel
-<img src="./Pastel.jpeg" alt="Base del Pastel" width="450"/>
+<div align="center">
+  <img src="./Pastel.jpeg" alt="Base del Pastel" width="320" height="240" />
+</div>
 
 ---
 
