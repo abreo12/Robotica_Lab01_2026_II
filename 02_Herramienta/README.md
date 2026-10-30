@@ -11,7 +11,7 @@ Aquí se incluirán:
 * 📐 **Tubo del marcador:** [`Tubo_marcador.step`](./Tubo_marcador.step)
 * 📦 **Modelo para RobotStudio:** [`HERRAMIENTA_PARA_SIMULACION.sat`](./HERRAMIENTA_PARA_SIMULACION.sat)
  #### 📸 Vista Previa del Modelo CAD
-![Vista 3D de la Herramienta](./herramienta.png)
+![Vista 3D de la Herramienta](./herramienta.jpeg)
 
 ---
 
