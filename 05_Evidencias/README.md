@@ -60,6 +60,6 @@ Documentación visual del funcionamiento del controlador ABB IRC5 mediante la ac
 
 | Entorno Real (Laboratorio) | Simulación (RobotStudio) |
 | :---: | :---: |
-| <img src="./bwdconveyor.gif" width="300"/> | <img src="./conveyor_iss.gif" width="300"/> |
+| <img src="./BWD.gif" width="300"/> | <img src="./conveyor_iss.gif" width="300"/> |
 
-> **Archivos origen:** Real: `bwdconveyor.mp4`[cite: 5] | Simulación: `conveyor_iss.mp4`[cite: 5]
+
