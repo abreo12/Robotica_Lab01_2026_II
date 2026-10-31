@@ -1,14 +1,65 @@
 # Evidencias
 
-En esta carpeta se almacenarán las evidencias del funcionamiento de la práctica.
+## 🧪 Evidencias de Funcionamiento I/O y Banda Transportadora
 
-Se incluirán evidencias de:
+Documentación visual del funcionamiento del controlador ABB IRC5 mediante la activación de entradas digitales (sensores/pulsadores), salidas de indicación (testigos `DO`) y actuadores de la banda transportadora.
 
-* **DI 01 - Ciclo automático.**
-* **DI 02 - Pose de mantenimiento.**
-* **DI 03 - Farmear Aura.**
-* **DO 01 - Decoración.**
-* **DO 02 - Mantenimiento.**
-* **DO 03 - Farmear Aura.**
-* **FWD Conveyor.**
-* **BWD Conveyor.**
+---
+
+### 1. Entrada DI_01 y Salida DO_01 (Pulsador y Testigo 1)
+
+**Descripción:** Al accionar el pulsador de la entrada digital `DI_01`, el controlador procesa la señal en tiempo real y conmuta la salida digital `DO_01`, encendiendo el piloto luminoso correspondiente.
+
+| Entorno Real (Laboratorio) | Simulación (RobotStudio) |
+| :---: | :---: |
+| <img src="./I01.gif" width="300"/> | <img src="./DIO1s.gif" width="300"/> |
+
+> **Archivos origen:** Real: `I01.mp4`[cite: 5] | Simulación: `DIO1s.mp4`[cite: 5]
+
+---
+
+### 2. Entrada DI_02 y Salida DO_02 (Pulsador y Testigo 2)
+
+**Descripción:** Verificación del canal de entrada `DI_02`. La lectura correcta de esta señal en la rutina del programa RAPID dispara de forma inmediata la activación de la salida `DO_02`.
+
+| Entorno Real (Laboratorio) | Simulación (RobotStudio) |
+| :---: | :---: |
+| <img src="./I02.gif" width="300"/> | <img src="./DI02s.gif" width="300"/> |
+
+> **Archivos origen:** Real: `I02.mp4`[cite: 5] | Simulación: `DI02s.mp4`[cite: 5]
+
+---
+
+### 3. Entrada DI_03 y Salida DO_03 (Pulsador y Testigo 3)
+
+**Descripción:** Enclavamiento y validación del tercer canal digital `DI_03`, confirmando la respuesta de la salida `DO_03` tanto en la celda virtual como en el tablero físico del robot.
+
+| Entorno Real (Laboratorio) | Simulación (RobotStudio) |
+| :---: | :---: |
+| <img src="./I03.gif" width="300"/> | <img src="./Dio3s.gif" width="300"/> |
+
+> **Archivos origen:** Real: `I03.mp4`[cite: 5] | Simulación: `Dio3s.mp4`[cite: 5]
+
+---
+
+### 4. Avance de la Banda Transportadora (`FWD_Conveyor`)
+
+**Descripción:** Activación de la salida digital encargada del giro del motor de la banda transportadora en sentido directo (`Forward`), moviendo la pieza de trabajo hacia el área de pintado/escritura del robot.
+
+| Entorno Real (Laboratorio) | Simulación (RobotStudio) |
+| :---: | :---: |
+| <img src="./fwdconveyor.gif" width="300"/> | <img src="./conveyor_is.gif" width="300"/> |
+
+> **Archivos origen:** Real: `fwdconveyor.mp4`[cite: 5] | Simulación: `conveyor_is.mp4`[cite: 5]
+
+---
+
+### 5. Retroceso de la Banda Transportadora (`BWD_Conveyor`)
+
+**Descripción:** Maniobra de inversión de marcha (`Backward`) de la banda transportadora, utilizada para el reposicionamiento o descarte de material según la lógica del proceso.
+
+| Entorno Real (Laboratorio) | Simulación (RobotStudio) |
+| :---: | :---: |
+| <img src="./bwdconveyor.gif" width="300"/> | <img src="./conveyor_iss.gif" width="300"/> |
+
+> **Archivos origen:** Real: `bwdconveyor.mp4`[cite: 5] | Simulación: `conveyor_iss.mp4`[cite: 5]
