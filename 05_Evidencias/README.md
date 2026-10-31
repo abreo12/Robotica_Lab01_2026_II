@@ -14,7 +14,7 @@ Documentación visual del funcionamiento del controlador ABB IRC5 mediante la ac
 | :---: | :---: |
 | <img src="./I01.gif" width="300"/> | <img src="./I01s.gif" width="300"/> |
 
-> **Archivos origen:** Real: `I01.mp4`[cite: 5] | Simulación: `DIO1s.mp4`[cite: 5]
+>
 
 ---
 
@@ -24,9 +24,9 @@ Documentación visual del funcionamiento del controlador ABB IRC5 mediante la ac
 
 | Entorno Real (Laboratorio) | Simulación (RobotStudio) |
 | :---: | :---: |
-| <img src="./I02.gif" width="300"/> | <img src="./DI02s.gif" width="300"/> |
+| <img src="./IO2.gif" width="300"/> | <img src="./DI02s.gif" width="300"/> |
 
-> **Archivos origen:** Real: `I02.mp4`[cite: 5] | Simulación: `DI02s.mp4`[cite: 5]
+
 
 ---
 
@@ -36,9 +36,9 @@ Documentación visual del funcionamiento del controlador ABB IRC5 mediante la ac
 
 | Entorno Real (Laboratorio) | Simulación (RobotStudio) |
 | :---: | :---: |
-| <img src="./I03.gif" width="300"/> | <img src="./Dio3s.gif" width="300"/> |
+| <img src="./I03.gif" width="300"/> | <img src="./I03s.gif" width="300"/> |
 
-> **Archivos origen:** Real: `I03.mp4`[cite: 5] | Simulación: `Dio3s.mp4`[cite: 5]
+
 
 ---
 
@@ -48,9 +48,8 @@ Documentación visual del funcionamiento del controlador ABB IRC5 mediante la ac
 
 | Entorno Real (Laboratorio) | Simulación (RobotStudio) |
 | :---: | :---: |
-| <img src="./fwdconveyor.gif" width="300"/> | <img src="./conveyor_is.gif" width="300"/> |
+| <img src="./fwd.gif" width="300"/> | <img src="./fwd_conveyors.gif" width="300"/> |
 
-> **Archivos origen:** Real: `fwdconveyor.mp4`[cite: 5] | Simulación: `conveyor_is.mp4`[cite: 5]
 
 ---
 
@@ -60,6 +59,6 @@ Documentación visual del funcionamiento del controlador ABB IRC5 mediante la ac
 
 | Entorno Real (Laboratorio) | Simulación (RobotStudio) |
 | :---: | :---: |
-| <img src="./BWD.gif" width="300"/> | <img src="./conveyor_iss.gif" width="300"/> |
+| <img src="./BWD.gif" width="300"/> | <img src="./bwd_conveyors.gif" width="300"/> |
 
 
