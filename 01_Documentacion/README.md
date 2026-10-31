@@ -2,6 +2,9 @@
 
 En esta carpeta se encuentra la documentación correspondiente al desarrollo del Laboratorio No. 01 de Robótica Industrial.
 ## Descripción de la solución implementada.
+<div align="center">
+  <img src="./Grupo.jpg" alt="Foto del Equipo" width="500" />
+</div>
 **Asignatura:** Robótica Industrial  
 **Ubicación:** Laboratorio de Sistemas Inteligentes Robotizados (Lab SIR - UNAL)  
 **Equipo:** Grupo 4C ("Robot Abel")  
