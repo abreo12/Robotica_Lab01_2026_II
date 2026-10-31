@@ -4,7 +4,7 @@ En esta carpeta se encuentra la documentación correspondiente al desarrollo del
 ## Descripción de la solución implementada.
 
 <div align="center">
-  <img src="./Grupo.jpeg" alt="Foto del Equipo" width="320" height="350" />
+  <img src="./Grupo.jpeg" alt="Foto del Equipo" width="280" height="350" />
 </div>
 
 **Asignatura:** Robótica Industrial  
