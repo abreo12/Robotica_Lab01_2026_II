@@ -24,7 +24,7 @@ Documentación visual del funcionamiento del controlador ABB IRC5 mediante la ac
 
 | Entorno Real (Laboratorio) | Simulación (RobotStudio) |
 | :---: | :---: |
-| <img src="./I03.gif" width="300"/> | <img src="./DI02s.gif" width="300"/> |
+| <img src="./I03.gif" width="300"/> | <img src="./I02s.gif" width="300"/> |
 
 
 
@@ -59,6 +59,6 @@ Documentación visual del funcionamiento del controlador ABB IRC5 mediante la ac
 
 | Entorno Real (Laboratorio) | Simulación (RobotStudio) |
 | :---: | :---: |
-| <img src="./BWD.gif" width="300"/> | <img src="./bwd_conveyors.gif" width="300"/> |
+| <img src="./bwd_conveyors.gif" width="300"/> | <img src="./bwd_conveyors.gif" width="300"/> |
 
 
